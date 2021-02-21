@@ -1,0 +1,355 @@
+{
+  "warnings": [
+    {
+      "file": "/Users/anton/Desktop/Weather(MVVM) copy/Weather(Delegation)/Weather/Model/WeatherModel.swift",
+      "line": 13,
+      "symbol": "WeatherModel.data",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/anton/Desktop/Weather(MVVM) copy/Weather(Delegation)/Weather/Model/WeatherModel.swift",
+      "line": 16,
+      "symbol": "WeatherData",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/anton/Desktop/Weather(MVVM) copy/Weather(Delegation)/Weather/Model/WeatherModel.swift",
+      "line": 17,
+      "symbol": "WeatherData.request",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/anton/Desktop/Weather(MVVM) copy/Weather(Delegation)/Weather/Model/WeatherModel.swift",
+      "line": 18,
+      "symbol": "WeatherData.weather",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/anton/Desktop/Weather(MVVM) copy/Weather(Delegation)/Weather/Model/WeatherModel.swift",
+      "line": 21,
+      "symbol": "Request",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/anton/Desktop/Weather(MVVM) copy/Weather(Delegation)/Weather/Model/WeatherModel.swift",
+      "line": 22,
+      "symbol": "Request.query",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/anton/Desktop/Weather(MVVM) copy/Weather(Delegation)/Weather/Model/WeatherModel.swift",
+      "line": 25,
+      "symbol": "Weather",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/anton/Desktop/Weather(MVVM) copy/Weather(Delegation)/Weather/Model/WeatherModel.swift",
+      "line": 26,
+      "symbol": "Weather.date",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/anton/Desktop/Weather(MVVM) copy/Weather(Delegation)/Weather/Model/WeatherModel.swift",
+      "line": 27,
+      "symbol": "Weather.maxtempC",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/anton/Desktop/Weather(MVVM) copy/Weather(Delegation)/Weather/Model/WeatherModel.swift",
+      "line": 28,
+      "symbol": "Weather.mintempC",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/anton/Desktop/Weather(MVVM) copy/Weather(Delegation)/Weather/Model/WeatherModel.swift",
+      "line": 29,
+      "symbol": "Weather.hourly",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/anton/Desktop/Weather(MVVM) copy/Weather(Delegation)/Weather/Model/WeatherModel.swift",
+      "line": 32,
+      "symbol": "Hourly",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/anton/Desktop/Weather(MVVM) copy/Weather(Delegation)/Weather/Model/WeatherModel.swift",
+      "line": 33,
+      "symbol": "Hourly.weatherIconUrl",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/anton/Desktop/Weather(MVVM) copy/Weather(Delegation)/Weather/Model/WeatherModel.swift",
+      "line": 36,
+      "symbol": "WeatherIcon",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/anton/Desktop/Weather(MVVM) copy/Weather(Delegation)/Weather/Model/WeatherModel.swift",
+      "line": 37,
+      "symbol": "WeatherIcon.value",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/anton/Desktop/Weather(MVVM) copy/Weather(Delegation)/Weather/SupportFiles/AppDelegate.swift",
+      "line": 12,
+      "symbol": "AppDelegate",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/anton/Desktop/Weather(MVVM) copy/Weather(Delegation)/Weather/SupportFiles/AppDelegate.swift",
+      "line": 16,
+      "symbol": "AppDelegate.application(_:didFinishLaunchingWithOptions:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/anton/Desktop/Weather(MVVM) copy/Weather(Delegation)/Weather/SupportFiles/AppDelegate.swift",
+      "line": 23,
+      "symbol": "AppDelegate.application(_:configurationForConnecting:options:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/anton/Desktop/Weather(MVVM) copy/Weather(Delegation)/Weather/SupportFiles/AppDelegate.swift",
+      "line": 29,
+      "symbol": "AppDelegate.application(_:didDiscardSceneSessions:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/anton/Desktop/Weather(MVVM) copy/Weather(Delegation)/Weather/SupportFiles/SceneDelegate.swift",
+      "line": 11,
+      "symbol": "SceneDelegate",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/anton/Desktop/Weather(MVVM) copy/Weather(Delegation)/Weather/SupportFiles/SceneDelegate.swift",
+      "line": 13,
+      "symbol": "SceneDelegate.window",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/anton/Desktop/Weather(MVVM) copy/Weather(Delegation)/Weather/SupportFiles/SceneDelegate.swift",
+      "line": 16,
+      "symbol": "SceneDelegate.scene(_:willConnectTo:options:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/anton/Desktop/Weather(MVVM) copy/Weather(Delegation)/Weather/SupportFiles/SceneDelegate.swift",
+      "line": 23,
+      "symbol": "SceneDelegate.sceneDidDisconnect(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/anton/Desktop/Weather(MVVM) copy/Weather(Delegation)/Weather/SupportFiles/SceneDelegate.swift",
+      "line": 30,
+      "symbol": "SceneDelegate.sceneDidBecomeActive(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/anton/Desktop/Weather(MVVM) copy/Weather(Delegation)/Weather/SupportFiles/SceneDelegate.swift",
+      "line": 35,
+      "symbol": "SceneDelegate.sceneWillResignActive(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/anton/Desktop/Weather(MVVM) copy/Weather(Delegation)/Weather/SupportFiles/SceneDelegate.swift",
+      "line": 40,
+      "symbol": "SceneDelegate.sceneWillEnterForeground(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/anton/Desktop/Weather(MVVM) copy/Weather(Delegation)/Weather/SupportFiles/SceneDelegate.swift",
+      "line": 45,
+      "symbol": "SceneDelegate.sceneDidEnterBackground(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/anton/Desktop/Weather(MVVM) copy/Weather(Delegation)/Weather/View/ViewController.swift",
+      "line": 11,
+      "symbol": "ViewController",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/anton/Desktop/Weather(MVVM) copy/Weather(Delegation)/Weather/View/ViewController.swift",
+      "line": 15,
+      "symbol": "ViewController.tableView",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/anton/Desktop/Weather(MVVM) copy/Weather(Delegation)/Weather/View/ViewController.swift",
+      "line": 19,
+      "symbol": "ViewController.weatherManager",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/anton/Desktop/Weather(MVVM) copy/Weather(Delegation)/Weather/View/ViewController.swift",
+      "line": 21,
+      "symbol": "ViewController.viewDidLoad()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/anton/Desktop/Weather(MVVM) copy/Weather(Delegation)/Weather/View/ViewController.swift",
+      "line": 47,
+      "symbol": "ViewController",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/anton/Desktop/Weather(MVVM) copy/Weather(Delegation)/Weather/View/ViewController.swift",
+      "line": 49,
+      "symbol": "ViewController.tableView(_:numberOfRowsInSection:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/anton/Desktop/Weather(MVVM) copy/Weather(Delegation)/Weather/View/ViewController.swift",
+      "line": 53,
+      "symbol": "ViewController.tableView(_:cellForRowAt:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/anton/Desktop/Weather(MVVM) copy/Weather(Delegation)/Weather/View/ViewController.swift",
+      "line": 65,
+      "symbol": "ViewController",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/anton/Desktop/Weather(MVVM) copy/Weather(Delegation)/Weather/View/ViewController.swift",
+      "line": 67,
+      "symbol": "ViewController.searchBarSearchButtonClicked(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/anton/Desktop/Weather(MVVM) copy/Weather(Delegation)/Weather/View/ViewController.swift",
+      "line": 84,
+      "symbol": "ViewController",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/anton/Desktop/Weather(MVVM) copy/Weather(Delegation)/Weather/View/WeatherTableViewCell.swift",
+      "line": 11,
+      "symbol": "WeatherTableViewCell",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/anton/Desktop/Weather(MVVM) copy/Weather(Delegation)/Weather/View/WeatherTableViewCell.swift",
+      "line": 15,
+      "symbol": "WeatherTableViewCell.iconImg",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/anton/Desktop/Weather(MVVM) copy/Weather(Delegation)/Weather/View/WeatherTableViewCell.swift",
+      "line": 16,
+      "symbol": "WeatherTableViewCell.maxLabel",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/anton/Desktop/Weather(MVVM) copy/Weather(Delegation)/Weather/View/WeatherTableViewCell.swift",
+      "line": 17,
+      "symbol": "WeatherTableViewCell.minLabel",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/anton/Desktop/Weather(MVVM) copy/Weather(Delegation)/Weather/View/WeatherTableViewCell.swift",
+      "line": 27,
+      "symbol": "WeatherTableViewCell.awakeFromNib()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/anton/Desktop/Weather(MVVM) copy/Weather(Delegation)/Weather/View/WeatherTableViewCell.swift",
+      "line": 32,
+      "symbol": "WeatherTableViewCell.setSelected(_:animated:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/anton/Desktop/Weather(MVVM) copy/Weather(Delegation)/Weather/ViewModel/WeatherViewModel.swift",
+      "line": 11,
+      "symbol": "WeatherViewModel",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/anton/Desktop/Weather(MVVM) copy/Weather(Delegation)/Weather/ViewModel/WeatherViewModel.swift",
+      "line": 12,
+      "symbol": "WeatherViewModel.cityName",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/anton/Desktop/Weather(MVVM) copy/Weather(Delegation)/Weather/ViewModel/WeatherViewModel.swift",
+      "line": 13,
+      "symbol": "WeatherViewModel.day",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/anton/Desktop/Weather(MVVM) copy/Weather(Delegation)/Weather/ViewModel/WeatherViewModel.swift",
+      "line": 14,
+      "symbol": "WeatherViewModel.maxTemp",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/anton/Desktop/Weather(MVVM) copy/Weather(Delegation)/Weather/ViewModel/WeatherViewModel.swift",
+      "line": 15,
+      "symbol": "WeatherViewModel.minTemp",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/anton/Desktop/Weather(MVVM) copy/Weather(Delegation)/Weather/ViewModel/WeatherViewModel.swift",
+      "line": 16,
+      "symbol": "WeatherViewModel.iconURL",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/anton/Desktop/Weather(MVVM) copy/Weather(Delegation)/Weather/ViewModel/WeatherViewModel.swift",
+      "line": 18,
+      "symbol": "WeatherViewModel.init(cityName:weather:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    }
+  ],
+  "source_directory": "/Users/anton/Desktop/Weather(MVVM) copy/Weather(Delegation)"
+}
