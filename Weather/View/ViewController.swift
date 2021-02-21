@@ -15,21 +15,35 @@ class ViewController: UIViewController {
   @IBOutlet weak var tableView: UITableView!
   
   /// Properties
-  var weatherViewModel = [WeatherViewModel]()
-  var weatherManager = WeatherManager()
+  var weatherVM = WeatherViewModel()
   
   override func viewDidLoad() {
     super.viewDidLoad()
     
     // Configuring all delegates
-    weatherManager.delegate = self
     searchBar.delegate = self
     tableView.delegate = self
     tableView.dataSource = self
     tableView.register(WeatherTableViewCell.nib(), forCellReuseIdentifier: WeatherTableViewCell.identifier)
     tableView.separatorStyle = .none
     
-    weatherManager.fetchWeatherByCity(cityName: "Gliwice")
+    self.weatherVM.weather.bind {
+      if ($0 != nil) {
+        DispatchQueue.main.async {
+          self.tableView.reloadData()
+        }
+      }
+    }
+  }
+  
+  /// A method that shows an alert
+  func showAlert() {
+    DispatchQueue.main.async {
+      let alert = UIAlertController(title: "Weather", message: "Not Found", preferredStyle: .alert)
+      let action = UIAlertAction(title: "Dismiss", style: .default, handler: .none)
+      alert.addAction(action)
+      self.present(alert, animated: true, completion: nil)
+    }
   }
 }
 
@@ -37,16 +51,18 @@ class ViewController: UIViewController {
 extension ViewController: UITableViewDelegate, UITableViewDataSource {
   
   func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-    return weatherViewModel.count
+    guard let weather = self.weatherVM.weather.value else { return 0 }
+    return weather.count
   }
   
   func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    guard let weather = self.weatherVM.weather.value else { return UITableViewCell() }
     let cell = tableView.dequeueReusableCell(withIdentifier: WeatherTableViewCell.identifier, for: indexPath) as! WeatherTableViewCell
     
-    let weatherObject = weatherViewModel[indexPath.row]
+    let weatherObject = weather[indexPath.row]
     
     cell.configureCell(with: weatherObject)
-    
+    self.title = weather.first?.cityName.value
     return cell
   }
 }
@@ -60,29 +76,20 @@ extension ViewController: UISearchBarDelegate {
       
       if cityString.contains(" ") {
         let split = cityString.components(separatedBy: " ")
-        weatherManager.fetchWeatherByCity(cityName: split[0], cityLastName: split[1])
+        weatherVM.fetchWeather(cityName: split[0], cityLastName: split[1]) { (isError) in
+          if isError == false {
+            self.showAlert()
+          }
+        }
       } else {
-        weatherManager.fetchWeatherByCity(cityName: cityString)
+        weatherVM.fetchWeather(cityName: cityString) { (isError) in
+          if isError == false {
+            self.showAlert()
+          }
+        }
       }
       searchBar.text = ""
       self.tableView.reloadData()
     }
-  }
-}
-
-/// Extension with WeatherManagerDelegate methods
-extension ViewController: WeatherManagerDelegate {
-
-  func didUpdateWeather(weather: [WeatherViewModel]) {
-    self.weatherViewModel = weather
-    DispatchQueue.main.async {
-      self.title = weather.first?.cityName
-      self.tableView.reloadData()
-    }
-    print(weather)
-  }
-  
-  func didFailWithError(error: Error) {
-    print(error)
   }
 }

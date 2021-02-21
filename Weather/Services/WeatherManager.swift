@@ -8,17 +8,6 @@
 
 import UIKit
 
-/// Methods for passing the data and dealing with errors
-protocol WeatherManagerDelegate {
-  /// A method for passing the weather data
-  /// - Parameter weather: requires a WeatherModel array
-  func didUpdateWeather(weather: [WeatherViewModel])
-  
-  /// An error method
-  /// - Parameter error: requires an error object
-  func didFailWithError(error: Error)
-}
-
 /// WeatherManager is resposible for the networking part
 struct WeatherManager {
   
@@ -28,41 +17,35 @@ struct WeatherManager {
   /// API key
   private let API_KEY = "2fb65054e53f45169c3141158211802"
   
-  /// WeatherManagerDelegate object
-  var delegate: WeatherManagerDelegate?
-  
   /// A method for retrieving the weather
-  /// - Parameter cityName: String as input
-  func fetchWeatherByCity(cityName: String) {
-    let urlString = "\(weatherURL)\(API_KEY)&q=\(cityName)"
-    performRequest(with: urlString)
-  }
-  
-  /// A method for retrieving the weather (in case the city name consits of two words. Ex. "New York")
   /// - Parameter cityName: first part of the city name
   /// - Parameter cityLastName: second part of the city name
-  func fetchWeatherByCity(cityName: String, cityLastName: String) {
-    let urlString = "\(weatherURL)\(API_KEY)&q=\(cityName)+\(cityLastName)"
-    performRequest(with: urlString)
+  /// - Parameter completionHandler: a callback with results
+  func fetchWeatherByCity(_ cityName: String, _ cityLastName: String?, completionHandler: @escaping (Result<WeatherModel?, Error>) -> ()) {
+    let urlString = "\(weatherURL)\(API_KEY)&q=\(cityName)+\(cityLastName ?? "")"
+    performRequest(with: urlString) { result in
+      completionHandler(result)
+    }
   }
   
   
   /// A method that performs the request
   /// - Parameter urlString: url as a string
-  private func performRequest(with urlString: String) {
+  /// - Parameter completionHandler: a callback with results
+  private func performRequest(with urlString: String, completionHandler: @escaping (Result<WeatherModel?, Error>) -> ()) {
     
     let url = URL(string: urlString)
     
     URLSession.shared.dataTask(with: url!) { (data, response, error) in
       
       if error != nil {
-        self.delegate?.didFailWithError(error: error!)
+        completionHandler(.failure(error!))
         return
       }
       
       if let safeData = data {
         if let weather = self.parseJSON(safeData) {
-          self.delegate?.didUpdateWeather(weather: weather)
+          completionHandler(.success(weather))
         }
       }
     }.resume()
@@ -71,21 +54,13 @@ struct WeatherManager {
   /// Method for parsing the JSON
   /// - Parameter weatherData: Data object
   /// - Returns: Optional WeatherModel array
-  private func parseJSON(_ weatherData: Data) -> [WeatherViewModel]? {
+  private func parseJSON(_ weatherData: Data) -> WeatherModel? {
     let decoder = JSONDecoder()
     do {
       let decodedData = try decoder.decode(WeatherModel.self, from: weatherData)
-      
-      var weatherModel = [WeatherViewModel]()
-      
-      let cityName = decodedData.data.request.first!
-      
-      for weather in decodedData.data.weather {
-        weatherModel.append(WeatherViewModel(cityName: cityName, weather: weather))
-      }
-      return weatherModel
+      return decodedData
     } catch {
-      delegate?.didFailWithError(error: error)
+      print(error)
       return nil
     }
   }

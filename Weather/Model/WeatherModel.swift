@@ -14,8 +14,13 @@ struct WeatherModel: Codable {
 }
 
 struct WeatherData: Codable {
-  let request: [Request]
-  let weather: [Weather]
+  let error: [APIError]?
+  let request: [Request]?
+  let weather: [Weather]?
+}
+
+struct APIError: Codable {
+  let msg: String
 }
 
 struct Request: Codable {
